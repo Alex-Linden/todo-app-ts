@@ -2,10 +2,29 @@ import { useState } from 'react';
 import './App.css';
 import { TodoApp } from './TodoApp';
 
-let initialState = [
-  'Learn React',
-  'Build a Todo App',
-  'Profit!'
+const initialState = [
+  {
+    id: "1", // uuid
+    title: "Learn React",
+    description: "Learn React from scratch",
+    completed: false,
+    priority: 1
+  },
+  {
+    id: "2", // uuid
+    title: "Learn TypeScript",
+    description: "Learn TypeScript from scratch",
+    completed: false,
+    priority: 2
+  },
+  {
+    id: "3", // uuid
+    title: "Learn Tailwind",
+    description: "Learn Tailwind from scratch",
+    completed: false,
+    priority: 3
+  },
+
 ];
 
 function App() {
